@@ -1,17 +1,21 @@
 package com.lihuan.mapper;
 
+import java.util.List;
+
 import com.lihuan.pojo.Catalog;
 
 public interface CatalogMapper {
-    int deleteByPrimaryKey(Long id);
+	int deleteByPrimaryKey(Long id);
 
-    int insert(Catalog record);
+	int insert(Catalog record);
 
-    int insertSelective(Catalog record);
+	int insertSelective(Catalog record);
 
-    Catalog selectByPrimaryKey(Long id);
+	Catalog selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(Catalog record);
+	List<Catalog> selectByPid(Long pid);
 
-    int updateByPrimaryKey(Catalog record);
+	int updateByPrimaryKeySelective(Catalog record);
+
+	int updateByPrimaryKey(Catalog record);
 }

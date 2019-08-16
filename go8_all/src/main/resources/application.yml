@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: go8-all
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/go8?characterEncoding=utf-8&serverTimezone=CTT
+    username: root
+    password: root
